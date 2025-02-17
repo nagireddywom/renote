@@ -693,7 +693,7 @@ const RazorpayPayment = ({
       document.body.appendChild(script);
     });
   };
-  const API_URL = process.env.REACT_APP_API_URL || "https://backend-wzk0.onrender.com" ;
+  const API_URL = process.env.REACT_APP_API_URL || "https://backend-wzk0.onrender.com/api" ;
 
   const handlePayment = async () => {
     setLoading(true);
