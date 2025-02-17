@@ -1,0 +1,418 @@
+/* General styles */
+.product-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  max-width: 1370px;
+  margin: 0 auto;
+  margin-top:35px
+}
+
+/* Grid layout */
+.product-grid {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 30px;
+}
+
+/* Left section: Image and Price */
+.product-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.product-image-container {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .base-price-container {
+  text-align: center;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.base-price-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+} */
+
+.price-note {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Right section: Information */
+.product-right-side {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Features List */
+.features-container {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content:center;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.feature-bullet {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* Dropdown options */
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+}
+
+.option-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.option-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+/* Quantity selector */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Price animation */
+.price-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.price-increase {
+  color: red;
+  transition: 0.3s ease;
+}
+
+.price-decrease {
+  color: green;
+  transition: 0.3s ease;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.buy-button, .customize-button {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buy-button {
+  background: #28a745;
+}
+
+.customize-button {
+  background: #007bff;
+}
+
+/* Suggested products */
+.suggested-products {
+  margin-top: 40px;
+  width: 100%;
+  background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.suggested-products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.suggested-product {
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.suggested-product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.suggested-product h3 {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-left,
+  .product-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .options-container {
+    flex-direction: column;
+  }
+
+  .option-group {
+    width: 100%;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 1.6rem;
+  }
+
+  .product-description {
+    font-size: 0.9rem;
+  }
+
+  .features-list {
+    font-size: 0.9rem;
+  }
+
+  .buy-button,
+  .customize-button {
+    font-size: 0.9rem;
+  }
+
+  .quantity-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-title {
+    font-size: 1.4rem;
+  }
+
+  .features-container,
+  .options-container {
+    padding: 0 10px;
+  }
+
+  .quantity-button {
+    padding: 3px 8px;
+    font-size: 0.8rem;
+  }
+
+  .quantity-input {
+    font-size: 0.8rem;
+  }
+
+  .buy-button,
+  .customize-button {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
+
+.base-price-container {
+  margin-top: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .base-price-container {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+
+
+/* price tag */
+.price-container {
+  font-family: 'Arial', sans-serif;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: fit-content;
+  margin-top: 200px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.selling-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+.mrp {
+  font-size: 16px;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.discount {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.price-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+/* Additional styles for tax info */
+.tax-info {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .price-container {
+    padding: 12px;
+  }
+  
+  .selling-price {
+    font-size: 20px;
+  }
+  
+  .mrp {
+    font-size: 14px;
+  }
+  
+  .discount {
+    font-size: 12px;
+  }
+}
